@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Generating self-signed SSL certificate
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 -keyout /etc/nginx/ssl/private/selfsigned.key \
 -out /etc/nginx/ssl/certs/selfsigned.crt \
